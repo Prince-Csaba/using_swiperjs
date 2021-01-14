@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/1_o8tTGo3vsocTKnCUyz0wHA.jpeg" alt="blue">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/elephant.jpg" alt="elephant">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/hamster.jpeg" alt="hamster">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/rare-combinaties.jpg" alt="coffe">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/coffe2.jpg" alt="coffe">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/coffe3.jpg" alt="coffe">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/coffe4.jpg" alt="coffe">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/arab_coffe.jpg" alt="coffe">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/coffe-latte-100-arabica.jpg" alt="coffe">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/IMG_20210109_135221.jpg" alt="guy">
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+
